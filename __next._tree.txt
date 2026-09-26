@@ -1,0 +1,2 @@
+:HL["/pharmatrace-gmp/_next/static/chunks/1bky75jf0pj0g.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"z7a11v7GwCnL0EJu-j6ri"}
