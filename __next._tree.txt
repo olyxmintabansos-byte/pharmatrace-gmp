@@ -1,2 +1,2 @@
 :HL["/pharmatrace-gmp/_next/static/chunks/1mr8wagyn95xo.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"jC0VpIRG4NFB5dHu2yEDs"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"SmzwZy8VeP0YTFjGDeSj7"}
