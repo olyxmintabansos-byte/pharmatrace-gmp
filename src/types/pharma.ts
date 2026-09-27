@@ -50,3 +50,49 @@ export interface PharmaKpi {
   meanDifferentialPressurePa: number;
   totalUnitsManufacturedToday: number;
 }
+
+export interface StabilityChamber {
+  chamberId: string;
+  name: string;
+  zoneType: "ACCELERATED_40C_75RH" | "LONG_TERM_25C_60RH" | "INTERMEDIATE_30C_65RH";
+  actualTempC: number;
+  targetTempC: number;
+  actualRhPct: number;
+  targetRhPct: number;
+  status: "CALIBRATED_NOMINAL" | "EXCURSION_ALARM";
+  totalSamplesStored: number;
+}
+
+export interface StabilityPullSample {
+  sampleId: string;
+  batchNumber: string;
+  productName: string;
+  timePoint: "1_MONTH" | "3_MONTHS" | "6_MONTHS" | "12_MONTHS" | "24_MONTHS";
+  storageCondition: string;
+  assayPotencyPct: number;
+  dissolutionPct: number;
+  totalImpuritiesPct: number;
+  pullStatus: "VALIDATED_PASSED" | "TESTING_IN_PROGRESS" | "SCHEDULED_PULL";
+}
+
+export interface BatchReleaseReport {
+  releaseCertificateNo: string;
+  batchNumber: string;
+  productCode: string;
+  productName: string;
+  dosageForm: string;
+  manufacturingDate: string;
+  expirationDate: string;
+  lotSizeUnits: number;
+  marketAuthorizationNo: string;
+  qaDisposition: "RELEASED_FOR_DISTRIBUTION" | "QUARANTINE_HOLD" | "REJECTED";
+  analyticalTests: {
+    testParameter: string;
+    specification: string;
+    actualResult: string;
+    compliance: "PASS" | "FAIL";
+  }[];
+  qualifiedPersonName: string;
+  qcDirectorName: string;
+  issueDate: string;
+}
